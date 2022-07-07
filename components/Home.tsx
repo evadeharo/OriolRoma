@@ -1,8 +1,14 @@
+import { APIAsset } from "types"
 
-type Props = {}
+type Props = {
+  title: string
+  text: string
+  subtext: string
+  image: APIAsset
+}
 
-const Home = ({ }: Props): React.ReactElement => {
-    return <div> </div>
+const Home = ({ title, text, subtext, image }: Props): React.ReactElement => {
+  return <div> </div>
 }
 
 export default Home

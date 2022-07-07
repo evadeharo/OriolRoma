@@ -1,8 +1,19 @@
+type Props = {
+  title: string
+  text: string
+  copyright: string
+  contact: string
+  email: string
+}
 
-type Props = {}
-
-const Footer = ({ }: Props): React.ReactElement => {
-    return <div> </div>
+const Footer = ({
+  title,
+  text,
+  copyright,
+  contact,
+  email,
+}: Props): React.ReactElement => {
+  return <div> </div>
 }
 
 export default Footer

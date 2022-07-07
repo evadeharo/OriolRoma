@@ -1,7 +1,14 @@
+type NavigationTypes = {
+    ctaLink: string
+    ctaLabel: string
+}
 
-type Props = {}
+type Props = {
+    logo: string
+    navigation: Array<NavigationTypes>
+}
 
-const Header = ({ }: Props): React.ReactElement => {
+const Header = ({ logo, navigation }: Props): React.ReactElement => {
     return <div> </div>
 }
 
