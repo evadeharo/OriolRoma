@@ -1,9 +1,10 @@
 import { PageType } from "../types"
+import { imageModule } from "./helpers"
 
 const data: PageType = {
   meta: {
-    title: "Dallonses base React/Next/TS project",
-    description: "description",
+    title: "Oriol Roma",
+    description: "Oriol Roma Portafolio",
     canonical: "",
     image: "",
   },
@@ -11,18 +12,38 @@ const data: PageType = {
   pageName: "home",
   components: [
     {
-      name: "Start",
-      key: "Start",
+      name: "Header",
+      key: "Header",
       props: {
-        title: "Start project",
-        text: "Base configuration of a Dallonses' project.",
-        list: [
-          "React, Next and Typescript project",
-          "Tailwindcss implemented",
-          "Basic components and types declarations",
-          "Usefull hooks and helpers",
-          "Mock data and real data processor",
-        ],
+        logo: "Oriol Roma",
+        navigation: [
+          {
+            ctaLabel: "Photo Assistant",
+            ctaLink: "/",
+          },
+          {
+            ctaLabel: "Photography",
+            ctaLink: "/",
+          },
+          {
+            ctaLabel: "Information",
+            ctaLink: "/",
+          },
+        ]
+      },
+    },
+    {
+      name: "Home",
+      key: "Home",
+      props: {
+        title: "Oriol Roma i Turull",
+        text: "Photo Assistant | Digital Tech",
+        subtext: "Photographer",
+        image: imageModule({
+          src: "/assets/welcome.jpg",
+          width: 440,
+          height: 628,
+        }),
       },
     },
   ],
