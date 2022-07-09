@@ -25,9 +25,11 @@ export default function Page({
         )}
       </Head>
       <PageContext.Provider value={pageContextValue}>
-        {components && (
-          <ComponentIterator pageName={pageName} modules={components} />
-        )}
+        <div className="relative">
+          {components && (
+            <ComponentIterator pageName={pageName} modules={components} />
+          )}
+        </div>
       </PageContext.Provider>
     </>
   )

@@ -16,18 +16,19 @@ const data: PageType = {
       key: "Header",
       props: {
         logo: "Oriol Roma",
+        ctaLinkHome: "/",
         navigation: [
           {
             ctaLabel: "Photo Assistant",
-            ctaLink: "/",
+            ctaLink: "/digitalTech",
           },
           {
             ctaLabel: "Photography",
-            ctaLink: "/",
+            ctaLink: "/photographer",
           },
           {
             ctaLabel: "Information",
-            ctaLink: "/",
+            ctaLink: "/about",
           },
         ],
       },
@@ -36,19 +37,34 @@ const data: PageType = {
       name: "DigitalSelector",
       key: "DigitalSelector",
       props: {
-        logo: "Photos that I took not being behind the camera",
+        title: "Photos that I took not being behind the camera",
         navigation: [
           {
             ctaLabel: "Workshop Barcelona Design Week",
             ctaLink: "/",
+            image: imageModule({
+              src: "/assets/images/digitalTech/bloque1.jpg",
+              width: 1200,
+              height: 700,
+            }),
           },
           {
             ctaLabel: "Shooting Laura Bolaños final fashion collection",
             ctaLink: "/",
+            image: imageModule({
+              src: "/assets/images/digitalTech/bloque2.jpg",
+              width: 1200,
+              height: 700,
+            }),
           },
           {
             ctaLabel: "Shooting final fashion collections LCI Barcelona 2020-2021",
             ctaLink: "/",
+            image: imageModule({
+              src: "/assets/images/digitalTech/bloque3.jpg",
+              width: 1200,
+              height: 700,
+            }),
           },
         ],
       },
@@ -60,8 +76,8 @@ const data: PageType = {
         title: "Oriol Roma i Turull",
         text: "Photo Assistant | Digital Tech | Photographer",
         copyright: "© Oriol Roma 2022",
-        contact: "Find me",
-        email: "mailto:o.romatufoto@gmail.com",
+        contact: "Contact me:",
+        email: "o.romatufoto@gmail.com",
       },
     },
   ],

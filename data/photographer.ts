@@ -16,39 +16,55 @@ const data: PageType = {
       key: "Header",
       props: {
         logo: "Oriol Roma",
+        ctaLinkHome: "/",
         navigation: [
           {
             ctaLabel: "Photo Assistant",
-            ctaLink: "/",
+            ctaLink: "/digitalTech",
           },
           {
             ctaLabel: "Photography",
-            ctaLink: "/",
+            ctaLink: "/photographer",
           },
           {
             ctaLabel: "Information",
-            ctaLink: "/",
+            ctaLink: "/about",
           },
         ],
       },
     },
     {
-      name: "PhotographySelector",
-      key: "PhotographySelector",
+      name: "DigitalSelector",
+      key: "DigitalSelector",
       props: {
         title: "See what I enjoy doing",
         navigation: [
           {
             ctaLabel: "Landscape",
             ctaLink: "/",
+            image: imageModule({
+              src: "/assets/images/digitalTech/bloque1.jpg",
+              width: 1200,
+              height: 700,
+            }),
           },
           {
             ctaLabel: "Sports",
             ctaLink: "/",
+            image: imageModule({
+              src: "/assets/images/digitalTech/bloque2.jpg",
+              width: 1200,
+              height: 700,
+            }),
           },
           {
             ctaLabel: "Personal",
             ctaLink: "/",
+            image: imageModule({
+              src: "/assets/images/digitalTech/bloque3.jpg",
+              width: 1200,
+              height: 700,
+            }),
           },
         ],
       },
