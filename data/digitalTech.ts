@@ -41,7 +41,7 @@ const data: PageType = {
         navigation: [
           {
             ctaLabel: "Workshop Barcelona Design Week",
-            ctaLink: "/",
+            ctaLink: "/digitalTech/workshop-bcn-design-week",
             image: imageModule({
               src: "/assets/images/digitalTech/bloque1.jpg",
               width: 1200,
@@ -50,7 +50,7 @@ const data: PageType = {
           },
           {
             ctaLabel: "Shooting Laura Bolaños final fashion collection",
-            ctaLink: "/",
+            ctaLink: "/digitalTech/shooting-laura-bolaños",
             image: imageModule({
               src: "/assets/images/digitalTech/bloque2.jpg",
               width: 1200,
@@ -59,7 +59,7 @@ const data: PageType = {
           },
           {
             ctaLabel: "Shooting final fashion collections LCI Barcelona 2020-2021",
-            ctaLink: "/",
+            ctaLink: "/digitalTech/shooting-final-fashion-LCI",
             image: imageModule({
               src: "/assets/images/digitalTech/bloque3.jpg",
               width: 1200,

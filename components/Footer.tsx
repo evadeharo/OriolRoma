@@ -20,11 +20,16 @@ const Footer = ({
         <span>{text}</span>
         <div>
           <span className="pr-1">{contact}</span>
-          <span>{email}</span>
+          <a
+            href="mailto:o.romatufoto@gmail.com"
+            className="border-b border-black"
+          >
+            {email}
+          </a>
         </div>
       </div>
       <div>
-        <span className="text-12">{copyright}</span>
+        <span className="text-12 opacity-40">{copyright}</span>
       </div>
     </div>
   )

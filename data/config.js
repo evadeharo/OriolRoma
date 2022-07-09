@@ -41,6 +41,24 @@ const data = [
       url: 'landscape',
     },
   },
+  {
+    route: ['digitalTech', 'workshop-bcn-design-week'],
+    api: {
+      url: 'workshop-bcn-design-week',
+    },
+  },
+  {
+    route: ['digitalTech', 'shooting-final-fashion-LCI'],
+    api: {
+      url: 'shooting-final-fashion-LCI',
+    },
+  },
+  {
+    route: ['digitalTech', 'shooting-laura-bolaños'],
+    api: {
+      url: 'shooting-laura-bolaños',
+    },
+  },
 ]
 
 module.exports = data
