@@ -37,21 +37,28 @@ const data: PageType = {
       name: "PhotographySelector",
       key: "PhotographySelector",
       props: {
-        logo: "See what I enjoy doing",
-        navigation: [
+        title: "Personal Work",
+        text: "Here you will find projects that don’t fit precisely in the Landscape or Sports category because of their extension or objective.",
+        options: [
           {
-            ctaLabel: "Landscape",
-            ctaLink: "/",
+            text: "Our night",
+            image: imageModule({
+              src: "/assets/images/photographer/portada3.jpg",
+              width: 1200,
+              height: 700,
+            }),
+            ctaLink: "/photographer/personal/our-night"
           },
           {
-            ctaLabel: "Sports",
-            ctaLink: "/",
+            text: "Falles d'Andorra la Vella - 2019",
+            image: imageModule({
+              src: "/assets/images/photographer/personal/ourNight/on1.jpg",
+              width: 1200,
+              height: 700,
+            }),
+            ctaLink: "/"
           },
-          {
-            ctaLabel: "Personal",
-            ctaLink: "/",
-          },
-        ],
+        ]
       },
     },
     {

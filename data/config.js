@@ -36,6 +36,12 @@ const data = [
     },
   },
   {
+    route: ['photographer', 'personal', 'our-night'],
+    api: {
+      url: 'our-night',
+    },
+  },
+  {
     route: ['photographer', 'landscape'],
     api: {
       url: 'landscape',

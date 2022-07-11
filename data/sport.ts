@@ -37,21 +37,36 @@ const data: PageType = {
       name: "PhotographySelector",
       key: "PhotographySelector",
       props: {
-        logo: "See what I enjoy doing",
-        navigation: [
+        title: "Sports",
+        options: [
           {
-            ctaLabel: "Landscape",
-            ctaLink: "/",
+            text: "Video for FCB Rugby “Legado”",
+            image: imageModule({
+              src: "/assets/images/photographer/personal/sport/portada1.jpg",
+              width: 1200,
+              height: 700,
+            }),
+            ctaLink: "/photographer/personal/sport/#",
           },
           {
-            ctaLabel: "Sports",
-            ctaLink: "/",
+            text: "2020-21 DHRugby FCB - UES",
+            image: imageModule({
+              src: "/assets/images/photographer/personal/sport/portada2.jpg",
+              width: 1200,
+              height: 700,
+            }),
+            ctaLink: "/photographer/personal/sport/#",
           },
           {
-            ctaLabel: "Personal",
-            ctaLink: "/",
+            text: " 2018-19 Copa del Rey Semifinals Hernani vs FCB",
+            image: imageModule({
+              src: "/assets/images/photographer/personal/sport/portada3.jpg",
+              width: 1200,
+              height: 700,
+            }),
+            ctaLink: "/photographer/personal/sport/#",
           },
-        ],
+        ]
       },
     },
     {

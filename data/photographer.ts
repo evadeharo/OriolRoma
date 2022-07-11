@@ -41,27 +41,27 @@ const data: PageType = {
         navigation: [
           {
             ctaLabel: "Landscape",
-            ctaLink: "/",
+            ctaLink: "/photographer/landscape",
             image: imageModule({
-              src: "/assets/images/digitalTech/bloque1.jpg",
+              src: "/assets/images/photographer/portada1.jpg",
               width: 1200,
               height: 700,
             }),
           },
           {
-            ctaLabel: "Sports",
-            ctaLink: "/",
+            ctaLabel: "Sport",
+            ctaLink: "/photographer/sport",
             image: imageModule({
-              src: "/assets/images/digitalTech/bloque2.jpg",
+              src: "/assets/images/photographer/portada2.jpg",
               width: 1200,
               height: 700,
             }),
           },
           {
             ctaLabel: "Personal",
-            ctaLink: "/",
+            ctaLink: "/photographer/personal",
             image: imageModule({
-              src: "/assets/images/digitalTech/bloque3.jpg",
+              src: "/assets/images/photographer/portada3.jpg",
               width: 1200,
               height: 700,
             }),
