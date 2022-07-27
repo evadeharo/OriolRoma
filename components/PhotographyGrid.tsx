@@ -52,7 +52,7 @@ const PhotographyGrid = ({
               className={`col-span-4 ${index === 0 && !ourNight ? "col-start-9" : ""
                 } ${index === 0 && ourNight ? "col-start-1" : ""}`}
             >
-              <MockImage image={item.image.props.image} />
+              <MockImage image={item.image.props.image} alt="" />
             </div>
           )
         })}

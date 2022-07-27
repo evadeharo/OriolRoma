@@ -12,6 +12,12 @@ const data = [
     },
   },
   {
+    route: ['about'],
+    api: {
+      url: 'about',
+    },
+  },
+  {
     route: ['photographer'],
     api: {
       url: 'photographer',

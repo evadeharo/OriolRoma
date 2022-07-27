@@ -20,3 +20,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.markdown {
+  white-space: pre-wrap;
+}
+
+.markdown br {
+  content: "";
+  display: block;
+  margin-bottom: 20px;
+}
+
+.markdown li {
+  list-style-type: disc;
+}
