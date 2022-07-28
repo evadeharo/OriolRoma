@@ -46,7 +46,7 @@ const data: PageType = {
               width: 1200,
               height: 700,
             }),
-            ctaLink: "/photographer/personal/sport/#",
+            ctaLink: "/photographer/sport/legado",
           },
           {
             text: "2020-21 DHRugby FCB - UES",

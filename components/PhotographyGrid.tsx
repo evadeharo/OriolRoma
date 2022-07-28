@@ -27,6 +27,8 @@ const PhotographyGrid = ({
   const ourNight = ["our-night"].includes(pageName)
   const falles = ["falles"].includes(pageName)
   const UES = ["FCB-UES"].includes(pageName)
+  const bolaños = ["shooting-laura-bolaños"].includes(pageName)
+  const designWeek = ["workshop-bcn-design-week"].includes(pageName)
 
   return (
     <Container>
@@ -50,12 +52,12 @@ const PhotographyGrid = ({
           return (
             <div
               key={index}
-              className={`col-span-4 ${index === 0 && !ourNight && !falles && !UES
-                  ? "col-start-1 md:col-start-9"
-                  : ""
+              className={`col-span-4 ${index === 0 && !ourNight && !falles && !UES && !bolaños && !designWeek
+                ? "col-start-1 md:col-start-9"
+                : ""
                 } ${(index === 0 && ourNight) ||
                   (index === 0 && falles) ||
-                  (index === 0 && UES)
+                  (index === 0 && UES) || (index === 0 && bolaños) || (index === 0 && designWeek)
                   ? "col-start-1"
                   : ""
                 }`}

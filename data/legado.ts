@@ -9,7 +9,7 @@ const data: PageType = {
     image: "",
   },
   language: "es",
-  pageName: "workshop-bcn-design-week",
+  pageName: "legado",
   components: [
     {
       name: "Header",
@@ -34,36 +34,13 @@ const data: PageType = {
       },
     },
     {
-      name: "PhotographyGrid",
-      key: "PhotographyGrid",
+      name: "VideoComponent",
+      key: "VideoComponent",
       props: {
-        title: "Shooting Laura Bolaños final fashion collection",
-        text: "Text per escriure",
-        outstanding: "Tenim destacat?",
-        photos: [
-          {
-            image: imageModule({
-              src: "/assets/images/digitalTech/designWeek/bloque1.jpg",
-              width: 1200,
-              height: 700,
-            }),
-          },
-          {
-            image: imageModule({
-              src: "/assets/images/digitalTech/designWeek/bloque1(2).jpg",
-              width: 1200,
-              height: 700,
-            }),
-          },
-          {
-            image: imageModule({
-              src: "/assets/images/digitalTech/designWeek/bloque1(3).jpg",
-              width: 1200,
-              height: 700,
-            }),
-          },
-        ]
-      },
+        title: "Legado",
+        text: "Description here",
+        src: ""
+      }
     },
     {
       name: "Footer",

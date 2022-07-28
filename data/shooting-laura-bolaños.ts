@@ -33,7 +33,59 @@ const data: PageType = {
         ],
       },
     },
-
+    {
+      name: "PhotographyGrid",
+      key: "PhotographyGrid",
+      props: {
+        title: "Shooting Laura Bolaños final fashion collection",
+        text: "Text per escriure",
+        outstanding: "Tenim destacat?",
+        photos: [
+          {
+            image: imageModule({
+              src: "/assets/images/digitalTech/lauraBolaños/bloque2.jpg",
+              width: 1200,
+              height: 700,
+            }),
+          },
+          {
+            image: imageModule({
+              src: "/assets/images/digitalTech/lauraBolaños/bloque2(2).jpg",
+              width: 1200,
+              height: 700,
+            }),
+          },
+          {
+            image: imageModule({
+              src: "/assets/images/digitalTech/lauraBolaños/bloque2(3).jpg",
+              width: 1200,
+              height: 700,
+            }),
+          },
+          {
+            image: imageModule({
+              src: "/assets/images/digitalTech/lauraBolaños/bloque2(4).jpg",
+              width: 1200,
+              height: 700,
+            }),
+          },
+          {
+            image: imageModule({
+              src: "/assets/images/digitalTech/lauraBolaños/bloque2(5).jpg",
+              width: 1200,
+              height: 700,
+            }),
+          },
+          {
+            image: imageModule({
+              src: "/assets/images/digitalTech/lauraBolaños/bloque2(6).jpg",
+              width: 1200,
+              height: 700,
+            }),
+          },
+        ]
+      },
+    },
     {
       name: "Footer",
       key: "Footer",

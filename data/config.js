@@ -65,12 +65,12 @@ const data = [
       url: 'FCB-Hernani',
     },
   },
-  // {
-  //   route: ['photographer', 'sport', 'BreakTheRecords'],
-  //   api: {
-  //     url: 'BreakTheRecords',
-  //   },
-  // },
+  {
+    route: ['photographer', 'sport', 'legado'],
+    api: {
+      url: 'legado',
+    },
+  },
   {
     route: ['photographer', 'landscape'],
     api: {
