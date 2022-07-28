@@ -42,7 +42,7 @@ const PhotographySelector = ({
                 }`}
             >
               <Link href={item.ctaLink} className="w-full relative">
-                <p className="z-50 text-20 leading-tight w-[80%] absolute bottom-0 p-4 text-white">
+                <p className="z-40 text-20 leading-tight w-[80%] absolute bottom-0 p-4 text-white">
                   {item.text}
                 </p>
                 <MockImage

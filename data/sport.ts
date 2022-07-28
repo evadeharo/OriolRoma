@@ -39,15 +39,15 @@ const data: PageType = {
       props: {
         title: "Sports",
         options: [
-          {
-            text: "Video for FCB Rugby “Legado”",
-            image: imageModule({
-              src: "/assets/images/photographer/personal/sport/portada1.jpg",
-              width: 1200,
-              height: 700,
-            }),
-            ctaLink: "/photographer/sport/legado",
-          },
+          // {
+          //   text: "Video for FCB Rugby “Legado”",
+          //   image: imageModule({
+          //     src: "/assets/images/photographer/personal/sport/portada1.jpg",
+          //     width: 1200,
+          //     height: 700,
+          //   }),
+          //   ctaLink: "/photographer/sport/legado",
+          // },
           {
             text: "2020-21 DHRugby FCB - UES",
             image: imageModule({
