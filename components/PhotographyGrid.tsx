@@ -10,7 +10,7 @@ type ImagesType = {
 type Props = {
   title: string
   text: string
-  text2: string
+  text2?: string
   photos: Array<ImagesType>
   pageName: string
   outstanding?: string
@@ -25,6 +25,8 @@ const PhotographyGrid = ({
   outstanding,
 }: Props): React.ReactElement => {
   const ourNight = ["our-night"].includes(pageName)
+  const falles = ["falles"].includes(pageName)
+  const UES = ["FCB-UES"].includes(pageName)
 
   return (
     <Container>
@@ -35,7 +37,7 @@ const PhotographyGrid = ({
 
         <div className="col-start-1 col-span-4 text-14">
           <p className="mb-3">{text}</p>
-          <p className="mb-6">{text2}</p>
+          {text2 && <p className="mb-6">{text2}</p>}
         </div>
 
         {outstanding && (
@@ -48,10 +50,21 @@ const PhotographyGrid = ({
           return (
             <div
               key={index}
-              className={`col-span-4 ${index === 0 && !ourNight ? "col-start-1 md:col-start-9" : ""
-                } ${index === 0 && ourNight ? "col-start-1" : ""}`}
+              className={`col-span-4 ${index === 0 && !ourNight && !falles && !UES
+                  ? "col-start-1 md:col-start-9"
+                  : ""
+                } ${(index === 0 && ourNight) ||
+                  (index === 0 && falles) ||
+                  (index === 0 && UES)
+                  ? "col-start-1"
+                  : ""
+                }`}
             >
-              <MockImage image={item.image.props.image} alt="" />
+              <MockImage
+                image={item.image.props.image}
+                alt=""
+                className="object-cover"
+              />
             </div>
           )
         })}

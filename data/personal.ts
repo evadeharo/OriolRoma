@@ -43,7 +43,7 @@ const data: PageType = {
           {
             text: "Our night",
             image: imageModule({
-              src: "/assets/images/photographer/portada3.jpg",
+              src: "/assets/images/photographer/personal/ourNight/on1.jpg",
               width: 1200,
               height: 700,
             }),
@@ -52,11 +52,11 @@ const data: PageType = {
           {
             text: "Falles d'Andorra la Vella - 2019",
             image: imageModule({
-              src: "/assets/images/photographer/personal/ourNight/on1.jpg",
+              src: "/assets/images/photographer/personal/falles/falles1.jpg",
               width: 1200,
               height: 700,
             }),
-            ctaLink: "/"
+            ctaLink: "/photographer/personal/falles",
           },
         ]
       },

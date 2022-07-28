@@ -48,6 +48,30 @@ const data = [
     },
   },
   {
+    route: ['photographer', 'personal', 'falles'],
+    api: {
+      url: 'falles',
+    },
+  },
+  {
+    route: ['photographer', 'sport', 'FCB-UES'],
+    api: {
+      url: 'FCB-UES',
+    },
+  },
+  {
+    route: ['photographer', 'sport', 'FCB-Hernani'],
+    api: {
+      url: 'FCB-Hernani',
+    },
+  },
+  // {
+  //   route: ['photographer', 'sport', 'BreakTheRecords'],
+  //   api: {
+  //     url: 'BreakTheRecords',
+  //   },
+  // },
+  {
     route: ['photographer', 'landscape'],
     api: {
       url: 'landscape',

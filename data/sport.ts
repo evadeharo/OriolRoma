@@ -55,7 +55,7 @@ const data: PageType = {
               width: 1200,
               height: 700,
             }),
-            ctaLink: "/photographer/personal/sport/#",
+            ctaLink: "/photographer/sport/FCB-UES",
           },
           {
             text: " 2018-19 Copa del Rey Semifinals Hernani vs FCB",
@@ -64,7 +64,7 @@ const data: PageType = {
               width: 1200,
               height: 700,
             }),
-            ctaLink: "/photographer/personal/sport/#",
+            ctaLink: "/photographer/sport/FCB-Hernani",
           },
         ]
       },
