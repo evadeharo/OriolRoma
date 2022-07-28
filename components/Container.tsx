@@ -28,7 +28,7 @@ const Container: React.FC<Props> = ({
       <div
         className={`w-full h-full border-none
           ${paddingHorizontal || "px-4 md:px-6 lg:px-8"}
-          ${paddingVertical || "py-12 md:py-12 xl:py-24"}
+          ${paddingVertical || "py-24 md:py-12 xl:py-24"}
           ${childrenContainerClassName}`}
       >
         {children}

@@ -77,7 +77,7 @@ const data: PageType = {
         text: "Photo Assistant | Digital Tech | Photographer",
         copyright: "© Oriol Roma 2022",
         contact: "Find me",
-        email: "mailto:o.romatufoto@gmail.com",
+        email: "o.romatufoto@gmail.com",
       },
     },
   ],

@@ -14,7 +14,7 @@ const Footer = ({
   email,
 }: Props): React.ReactElement => {
   return (
-    <div className="flex justify-between items-end p-8">
+    <div className="flex flex-col md:flex-row md:justify-between md:items-end p-4 md:p-8">
       <div className="flex flex-col">
         <span className="font-bold">{title}</span>
         <span>{text}</span>

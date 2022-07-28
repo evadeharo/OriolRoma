@@ -29,7 +29,7 @@ const PhotographyGrid = ({
   return (
     <Container>
       <Grid>
-        <div className="col-start-1 col-span-5 leading-tight font-medium mb-12">
+        <div className="col-start-1 col-span-4 md:col-span-5 leading-tight font-medium mb-6 md:mb-12">
           <h4 className="text-40">{title}</h4>
         </div>
 
@@ -39,7 +39,7 @@ const PhotographyGrid = ({
         </div>
 
         {outstanding && (
-          <span className="col-span-6 col-start-6 text-gray-600 italic text-14">
+          <span className="col-span-4 md:col-span-6 md:col-start-6 text-gray-600 italic text-14">
             {outstanding}
           </span>
         )}
@@ -49,7 +49,7 @@ const PhotographyGrid = ({
           return (
             <div
               key={index}
-              className={`col-span-4 ${index === 0 && !ourNight ? "col-start-9" : ""
+              className={`col-span-4 ${index === 0 && !ourNight ? "col-start-1 md:col-start-9" : ""
                 } ${index === 0 && ourNight ? "col-start-1" : ""}`}
             >
               <MockImage image={item.image.props.image} alt="" />
