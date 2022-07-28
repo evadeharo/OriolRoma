@@ -21,7 +21,6 @@ a {
   box-sizing: border-box;
 }
 
-
 .markdown {
   white-space: pre-wrap;
 }
@@ -34,4 +33,9 @@ a {
 
 .markdown li {
   list-style-type: disc;
+}
+
+.markdown ul {
+  list-style-type: square;
+  padding-left: 20px;
 }

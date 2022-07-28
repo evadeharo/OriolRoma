@@ -40,15 +40,13 @@ const data: PageType = {
         pretext: "Photo Assistant | Digital Tech | Photographer",
         contact: "Find me",
         email: "o.romatu@gmail.com",
-        text: `I am a photo assistant, digital tech and photographer based in Barcelona.
-        \n\nI grew up between the Catalan Pyrinees and Barcelona.
-        \n\nSports and mountains are my passions.`,
-        subtext: `Schooling / Specific education: 
-          \n- LCI Education Barcelona Diploma Superior en Fotografía Digital, 2019-2022 
-          \n- LCI Education Barcelona Máster en Fotografía de Moda y Publicitaria, (currently)
-          \n\n
+        text: `I am a photo assistant, digital tech and photographer based in Barcelona.\nI grew up between the Catalan Pyrinees and Barcelona.\nSports and mountains are my passions.
           
-          \n What is appealing to me? 
+          \n **Schooling / Specific education:**
+          \n- *LCI Education Barcelona:* Diploma Superior en Fotografía Digital, 2019-2022 
+          \n- *LCI Education Barcelona:* Máster en Fotografía de Moda y Publicitaria, (currently)
+          
+          \n **What is appealing to me?**
           \n- Photography assistant & Digital tech 
           \n- Landscape photography 
           \n- Sports photography 
