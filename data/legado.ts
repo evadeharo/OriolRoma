@@ -33,15 +33,15 @@ const data: PageType = {
         ],
       },
     },
-    {
-      name: "VideoComponent",
-      key: "VideoComponent",
-      props: {
-        title: "Legado",
-        text: "Description here",
-        src: ""
-      }
-    },
+    // {
+    //   name: "VideoComponent",
+    //   key: "VideoComponent",
+    //   props: {
+    //     title: "Legado",
+    //     text: "Description here",
+    //     src: ""
+    //   }
+    // },
     {
       name: "Footer",
       key: "Footer",

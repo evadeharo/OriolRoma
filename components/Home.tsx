@@ -40,11 +40,11 @@ const Home = ({
         </Link>
       </div>
 
-      <div className="h-screen w-auto md:w-full overflow-hidden z-0 brightness-50 bg-red-500">
-        <MockImage
-          image={image.props.image}
-          alt="Shooting de Oriol Roma en plató"
-          className="object-cover"
+      <div className="h-screen w-auto md:w-full overflow-hidden z-0 brightness-50">
+        <img
+          src="/assets/welcome.jpg"
+          alt=""
+          className="h-screen md:h-auto md:w-full object-cover "
         />
       </div>
     </div>
