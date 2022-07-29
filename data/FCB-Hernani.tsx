@@ -38,8 +38,7 @@ const data: PageType = {
       key: "PhotographyGrid",
       props: {
         title: "2018-19 Copa del Rey Semifinals Hernani vs FCB",
-        text: "Aquí un texto",
-        outstanding: "Hay destacado?",
+        text: "2018 - 2019 Copa del Rey Semifinals. The game was played in Hernani, under heavy rain which turned up the grass field into a mud field.",
         photos: [
           {
             image: imageModule({

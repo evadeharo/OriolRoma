@@ -39,7 +39,6 @@ const data: PageType = {
       props: {
         title: "Falles d'Andorra la Vella - 2019",
         text: "Text per escriure",
-        outstanding: "Tenim destacat?",
         photos: [
           {
             image: imageModule({

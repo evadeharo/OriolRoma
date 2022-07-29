@@ -37,9 +37,8 @@ const data: PageType = {
       name: "PhotographyGrid",
       key: "PhotographyGrid",
       props: {
-        title: "Shooting Laura Bolaños final fashion collection",
-        text: "Text per escriure",
-        outstanding: "Tenim destacat?",
+        title: "Barcelona Design Week Workshops with Marie Beriestain & Corina Landa",
+        text: "Every year Barcelona organizes the Design Week in which LCI Barcelona takes part hosting a few workshops regarding fashion and photography. This year I had the opportunity to assist in two different workshops.",
         photos: [
           {
             image: imageModule({
