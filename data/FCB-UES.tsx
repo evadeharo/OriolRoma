@@ -110,13 +110,6 @@ const data: PageType = {
               height: 700,
             }),
           },
-          {
-            image: imageModule({
-              src: "/assets/images/photographer/personal/sport/UES/FCBvsUES11.jpg",
-              width: 1200,
-              height: 700,
-            }),
-          },
         ]
       },
     },

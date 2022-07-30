@@ -32,7 +32,7 @@ const DesignersComponent: React.FC<Props> = ({
           <h4 className="text-40">{title}</h4>
         </div>
 
-        <div className="col-span-3 col-start-1 flex flex-col">
+        <div className="col-span-2 md:col-span-3 col-start-1 md:col-start-1 flex flex-col">
           <h6 className="text-20 font-bold">{day1}</h6>
           {textRow1.map((item, index) => {
             return (
@@ -42,7 +42,7 @@ const DesignersComponent: React.FC<Props> = ({
             )
           })}
         </div>
-        <div className="col-span-3 col-start-4 flex flex-col">
+        <div className="col-span-2 col-start-3 md:col-span-3 md:col-start-4 flex flex-col">
           <h6 className="text-20 font-bold">{day2}</h6>
           {textRow2.map((item, index) => {
             return (
@@ -52,7 +52,7 @@ const DesignersComponent: React.FC<Props> = ({
             )
           })}
         </div>
-        <div className="col-span-3 col-start-7 flex flex-col">
+        <div className="col-span-2 col-start-1 md:col-span-3 md:col-start-7 flex flex-col">
           <h6 className="text-20 font-bold">{day3}</h6>
 
           {textRow3.map((item, index) => {
@@ -63,7 +63,7 @@ const DesignersComponent: React.FC<Props> = ({
             )
           })}
         </div>
-        <div className="col-span-3 col-start-10 flex flex-col">
+        <div className="col-span-2 col-start-3 md:col-span-3 md:col-start-10 flex flex-col">
           <h6 className="text-20 font-bold">{day4}</h6>
           {textRow4.map((item, index) => {
             return (

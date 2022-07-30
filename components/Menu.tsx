@@ -7,19 +7,25 @@ type NavigationTypes = {
 
 type Props = {
   navigation: Array<NavigationTypes>
+  closeMenuCallback: () => void
 }
 
 const Menu: React.FC<Props> = ({
   navigation,
+  closeMenuCallback,
 }: Props): React.ReactElement => {
   return (
-    <div className="bg-black fixed inset-0 z-[90] w-screen h-screen flex justify-center items-center">
-      <div className="flex flex-col text-white">
+    <div className="bg-black fixed top-[8vh] left-0 w-screen h-screen flex justify-center items-center">
+      <div className="flex flex-col text-white leading-3xl">
         {navigation.map((item, index) => {
           return (
-            <div key={index}>
+            <button
+              key={index}
+              className="text-20"
+              onClick={() => closeMenuCallback()}
+            >
               <Link href={item.ctaLink}>{item.ctaLabel}</Link>
-            </div>
+            </button>
           )
         })}
       </div>

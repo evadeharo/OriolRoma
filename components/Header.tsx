@@ -31,6 +31,11 @@ const Header = ({
     }
   }
 
+  function closeMenuCallback(): void {
+    setShowMenuOverlay(null)
+    setBlockedScroll(false)
+  }
+
   useEffect(() => {
     if (typeof window === "undefined") return
     document.querySelector("body").style.overflow = blockedScroll
@@ -68,16 +73,19 @@ const Header = ({
             <div
               className={`bg-black h-[0.15rem] w-6 
               ${showMenuOverlay
-                  ? "transform -rotate-45 ease-in  duration-200"
+                  ? "transform -rotate-45 ease-in duration-200"
                   : "ease-out duration-300"
                 }`}
             />
           </div>
+          {showMenuOverlay && (
+            <Menu
+              navigation={navigation}
+              closeMenuCallback={closeMenuCallback}
+            />
+          )}
         </button>
       </div>
-      {showMenuOverlay &&
-        <Menu navigation={navigation} />
-      }
     </div>
   )
 }

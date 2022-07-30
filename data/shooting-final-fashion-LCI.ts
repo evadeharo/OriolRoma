@@ -38,8 +38,7 @@ const data: PageType = {
       key: "PhotographyGridMixedSizes",
       props: {
         title: "Shooting for LCI Barcelona 2020-2021",
-        text: `Every year LCI Barcelona organizes a fashion show for its last year fashion design students. Due to Covid-19 restrictions in 2021 was not possible to do it, so they decided to do a 4-day shooting instead.
-        \n The shooting took place in Top Studios, and the 53 fashion collections were photographed by a team of 5 photographers.`,
+        text: `Every year LCI Barcelona organizes a fashion show for its last year fashion design students. Due to Covid-19 restrictions in 2021 was not possible to do it, so they decided to do a 4-day shooting instead.\nThe shooting took place in Top Studios, and the 53 fashion collections were photographed by a team of 5 photographers.`,
         text2: `**Head of Photography**
         \n Salvatore Elefante
         \n **Digital Tech**
