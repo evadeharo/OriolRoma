@@ -40,7 +40,7 @@ const data: PageType = {
         title: "Shooting Laura Bolaños final fashion collection",
         text: `Fashion shooting for Laura Bolaños Arnal by Rita Salgado. Final fashion collection for her degree. Total of 6 looks, the idea behind the shooting was to get 4 full body images and some detail shots. \n The shooting took place in Artspace Barcelona.
         
-        \n ## Team
+        \n ##Team
 
         \n **Photographer**
         \n Rita Salgado
@@ -48,48 +48,48 @@ const data: PageType = {
         \n Oriol Roma i Turull
         \n **Designer**
         \n Laura Bolaños Arnal`,
-        outstanding: "Tenim destacat?",
+
         photos: [
           {
             image: imageModule({
               src: "/assets/images/digitalTech/lauraBolaños/bloque2.jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/lauraBolaños/bloque2(2).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/lauraBolaños/bloque2(3).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/lauraBolaños/bloque2(4).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/lauraBolaños/bloque2(5).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/lauraBolaños/bloque2(6).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
         ]

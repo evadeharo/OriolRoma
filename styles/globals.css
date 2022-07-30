@@ -39,3 +39,8 @@ a {
   list-style-type: square;
   padding-left: 20px;
 }
+
+.markdown h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}

@@ -1,6 +1,7 @@
 import { ImageType, ModuleType } from "types"
 import Container from "./Container"
 import Grid from "./Grid"
+import HTMLText from "./HTMLText"
 import MockImage from "./MockImage"
 
 type ImagesType = {
@@ -24,11 +25,8 @@ const PhotographyGrid = ({
   pageName,
   outstanding,
 }: Props): React.ReactElement => {
-  const ourNight = ["our-night"].includes(pageName)
-  const falles = ["falles"].includes(pageName)
-  const UES = ["FCB-UES"].includes(pageName)
-  const bolaños = ["shooting-laura-bolaños"].includes(pageName)
-  const designWeek = ["workshop-bcn-design-week"].includes(pageName)
+  const landscape = ["landscape"].includes(pageName)
+  const hernani = ["FCB-Hernani"].includes(pageName)
 
   return (
     <Container>
@@ -38,8 +36,8 @@ const PhotographyGrid = ({
         </div>
 
         <div className="col-start-1 col-span-4 text-14">
-          <p className="mb-3">{text}</p>
-          {text2 && <p className="mb-6">{text2}</p>}
+          <HTMLText className="mb-3" text={text} />
+          {text2 && <HTMLText className="mb-6" text={text2} />}
         </div>
 
         {outstanding && (
@@ -52,12 +50,13 @@ const PhotographyGrid = ({
           return (
             <div
               key={index}
-              className={`col-span-4 ${index === 0 && !ourNight && !falles && !UES && !bolaños && !designWeek
-                ? "col-start-1 md:col-start-9"
-                : ""
-                } ${(index === 0 && ourNight) ||
-                  (index === 0 && falles) ||
-                  (index === 0 && UES) || (index === 0 && bolaños) || (index === 0 && designWeek)
+              className={`col-span-4
+                ${(index === 0 && landscape) ||
+                  (index === 0 && hernani)
+                  ? "col-start-1 md:col-start-9"
+                  : ""
+                } ${(index === 0 && !landscape) ||
+                  (index === 0 && !hernani)
                   ? "col-start-1"
                   : ""
                 }`}

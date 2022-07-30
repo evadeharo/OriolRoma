@@ -34,26 +34,29 @@ const data: PageType = {
       },
     },
     {
-      name: "PhotographyGrid",
-      key: "PhotographyGrid",
+      name: "PhotographyGridMixedSizes",
+      key: "PhotographyGridMixedSizes",
       props: {
         title: "Shooting for LCI Barcelona 2020-2021",
         text: `Every year LCI Barcelona organizes a fashion show for its last year fashion design students. Due to Covid-19 restrictions in 2021 was not possible to do it, so they decided to do a 4-day shooting instead.
-        \n The shooting took place in Top Studios, and the 53 fashion collections were photographed by a team of 5 photographers..
-        
-        \n ## Team
-
-        \n **Head of Photography*
+        \n The shooting took place in Top Studios, and the 53 fashion collections were photographed by a team of 5 photographers.`,
+        text2: `**Head of Photography**
         \n Salvatore Elefante
-        \n **Photographers**
-        \n Renate Canga
-        \n Heidi Cavazos García
-        \n Anderson Galindo Clavijo
-        \n Alba Martín Chacón
         \n **Digital Tech**
         \n Oriol Roma i Turull`,
-        outstanding: "Tenim destacat?",
+        text3: `**Photographers**
+        \nRenate Canga
+        \nHeidi Cavazos García
+        \nAnderson Galindo Clavijo
+        \nAlba Martín Chacón`,
         photos: [
+          {
+            image: imageModule({
+              src: "/assets/images/digitalTech/portada.jpg",
+              width: 1200,
+              height: 700,
+            }),
+          },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3.jpg",
@@ -64,8 +67,8 @@ const data: PageType = {
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(2).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
@@ -78,8 +81,8 @@ const data: PageType = {
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(4).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
@@ -92,15 +95,15 @@ const data: PageType = {
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(6).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(7).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
@@ -127,15 +130,8 @@ const data: PageType = {
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(11).jpg",
-              width: 1200,
-              height: 700,
-            }),
-          },
-          {
-            image: imageModule({
-              src: "/assets/images/digitalTech/LCI/bloque3(3).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
@@ -147,16 +143,9 @@ const data: PageType = {
           },
           {
             image: imageModule({
-              src: "/assets/images/digitalTech/LCI/bloque3(3).jpg",
-              width: 1200,
-              height: 700,
-            }),
-          },
-          {
-            image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(13).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
@@ -169,22 +158,22 @@ const data: PageType = {
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(15).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(16).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(17).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
@@ -197,8 +186,8 @@ const data: PageType = {
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(19).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
@@ -211,46 +200,46 @@ const data: PageType = {
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(21).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(22).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(23).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(24).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(25).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
           {
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3(26).jpg",
-              width: 1200,
-              height: 700,
+              width: 1365,
+              height: 2048,
             }),
           },
-        ]
+        ],
       },
     },
     {
@@ -258,17 +247,72 @@ const data: PageType = {
       key: "DesignersComponent",
       props: {
         title: "Designers",
+        day1: "Day 1",
+        day2: "Day 2",
+        day3: "Day 3",
+        day4: "Day 4",
         textRow1: [
-          "Alexandra Alonso", "Ruben Arranz", "Gerard Aznar", "Marc Bartomeu", "Jin Bing", "Roger Iniesta", "Aleix Martos", "Camelia Rendón", "Carla Sanchez", "Miquel Torralva", "Kevin Torrente"
+          "Alexandra Alonso",
+          "Ruben Arranz",
+          "Gerard Aznar",
+          "Marc Bartomeu",
+          "Jin Bing",
+          "Roger Iniesta",
+          "Aleix Martos",
+          "Camelia Rendón",
+          "Carla Sanchez",
+          "Miquel Torralva",
+          "Kevin Torrente",
         ],
         textRow2: [
-          "Miriam Bautista", "Rocio Berrondo", "Anna Bieto", "Marino Castro", "Paula Hidalgo", "Irene Ibarz", "Maline Latorre", "Marta Llorens", "Aída Mateo", "Anna Paez", "Ariadna Ruiz", "Roser Samblas", "Anna Santos"
+          "Miriam Bautista",
+          "Rocio Berrondo",
+          "Anna Bieto",
+          "Marino Castro",
+          "Paula Hidalgo",
+          "Irene Ibarz",
+          "Maline Latorre",
+          "Marta Llorens",
+          "Aída Mateo",
+          "Anna Paez",
+          "Ariadna Ruiz",
+          "Roser Samblas",
+          "Anna Santos",
         ],
         textRow3: [
-          "Claudia Brugat", "Maria Cadanet", "Carla Calbet", "Sara Calero", "Cristina Casas", "Emma Dobarco", "Olga Durán", "María García", "Mariona Granollers", "Claudia Gutiérrez", "Claudia Lavado", "Mar Mondelo", "Andrea Oliva", "Julia Pagespetit", "Mónica Pérez", "Nuria Sans"
+          "Claudia Brugat",
+          "Maria Cadanet",
+          "Carla Calbet",
+          "Sara Calero",
+          "Cristina Casas",
+          "Emma Dobarco",
+          "Olga Durán",
+          "María García",
+          "Mariona Granollers",
+          "Claudia Gutiérrez",
+          "Claudia Lavado",
+          "Mar Mondelo",
+          "Andrea Oliva",
+          "Julia Pagespetit",
+          "Mónica Pérez",
+          "Nuria Sans",
         ],
-        textRow4: ["Inés Aldrey", "Sara Bailac", "Adriana Bertomeu", "Sonia Cuesta", "Estefania Emperador", "Estela García", "Neus García", "Carla Lázaro", "Nerea Llobregat", "Blanca López", "Silvia Martí", "Regina Pera", "Gemma Torrent"],
-      }
+        textRow4: [
+          "Inés Aldrey",
+          "Sara Bailac",
+          "Adriana Bertomeu",
+          "Sonia Cuesta",
+          "Estefania Emperador",
+          "Estela García",
+          "Neus García",
+          "Carla Lázaro",
+          "Nerea Llobregat",
+          "Blanca López",
+          "Silvia Martí",
+          "Regina Pera",
+          "Gemma Torrent",
+        ],
+      },
     },
     {
       name: "Footer",
