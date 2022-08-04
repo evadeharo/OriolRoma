@@ -5,9 +5,9 @@ const Breadcrumb = (): React.ReactElement => {
 
   return (
     <Container
-      paddingVertical="pt-16"
-      className="fixed inset-0 h-24 z-50"
-      backgroundColor="bg-gray-300"
+      paddingVertical="pt-14"
+      className="fixed inset-0 h-[12vh] z-50"
+      backgroundColor="bg-white"
     >
       <Breadcrumbs
         rootLabel="Home"

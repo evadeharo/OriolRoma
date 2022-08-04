@@ -44,7 +44,7 @@ const Header = ({
   }, [blockedScroll])
 
   return (
-    <div className="h-[8vh] bg-white w-full fixed top-0 flex items-center justify-between md:px-8 z-[100] px-4">
+    <div className="h-[7vh] bg-white w-full fixed top-0 flex items-center justify-between md:px-8 z-[100] px-4">
       <div className="flex flex-col">
         <Link href={ctaLinkHome}>
           <span className="text-24 font-bold">{logo}</span>

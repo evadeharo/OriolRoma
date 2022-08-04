@@ -63,6 +63,8 @@ const data: PageType = {
           width: 1200,
           height: 1200,
         }),
+        ctaLinkInstagram: "https://www.instagram.com/o.romatu/?hl=es",
+        ctaLinkLinkedin: "https://es.linkedin.com/in/oriol-roma",
       },
     },
   ],
