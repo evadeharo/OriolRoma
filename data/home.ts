@@ -18,10 +18,15 @@ const data: PageType = {
         title: "Oriol Roma i Turull",
         assistant: "Photo Assistant | Digital Tech",
         photographer: "Photographer",
-        image: imageModule({
+        assistantImage: imageModule({
           src: "/assets/welcome.jpg",
           width: 1200,
           height: 700,
+        }),
+        photographerImage: imageModule({
+          src: "/assets/images/digitalTech/portada.jpg",
+          width: 600,
+          height: 350,
         }),
         ctaLinkAssistant: "/digitalTech",
         ctaLinkPhotographer: "/photographer",

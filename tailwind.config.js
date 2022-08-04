@@ -34,6 +34,9 @@ module.exports = {
         130: '8.125rem',
         150: '9.375rem',
       },
+      content: {
+        '-': '-',
+      },
     },
   },
   variants: {

@@ -45,9 +45,11 @@ const Header = ({
 
   return (
     <div className="h-[8vh] bg-white w-full fixed top-0 flex items-center justify-between md:px-8 z-50 px-4">
-      <Link className="w-1/2" href={ctaLinkHome}>
-        <span className="text-24 font-bold">{logo}</span>
-      </Link>
+      <div className="flex flex-col">
+        <Link href={ctaLinkHome}>
+          <span className="text-24 font-bold">{logo}</span>
+        </Link>
+      </div>
       <div className="hidden md:flex justify-end gap-x-6 w-1/2">
         {navigation.map((item, index) => {
           return (

@@ -1,53 +1,64 @@
 import { ImageType, ModuleType } from "types"
 import MockImage from "./MockImage"
 import Link from "./Link"
+import Container from "./Container"
+import Grid from "./Grid"
 
 type Props = {
   title: string
   assistant: string
   photographer: string
-  image: ModuleType<ImageType>
   ctaLinkAssistant: string
   ctaLinkPhotographer: string
+  assistantImage: ModuleType<ImageType>
+  photographerImage: ModuleType<ImageType>
 }
 
 const Home = ({
   title,
   assistant,
   photographer,
-  image,
   ctaLinkAssistant,
   ctaLinkPhotographer,
+  assistantImage,
+  photographerImage,
 }: Props): React.ReactElement => {
+  console.log(photographerImage)
+
   return (
-    <div className="relative h-full">
-      <div className="absolute w-2/3 leading-none md:w-full top-2 md:top-0 left-0 text-white z-50 uppercase text-40 font-medium pl-6 pt-3">
-        <h1>{title}</h1>
-      </div>
-
-      <div className="flex flex-col md:flex-row justify-center items-center text-center absolute top-0 left-0 text-white w-full h-full">
-        <Link
-          className="w-full md:w-1/2 flex justify-center md:justify-end md:pr-24 items-center relative mb-24 md:mb-0"
-          href={ctaLinkAssistant}
-        >
-          <h2 className="z-50 text-24">{assistant}</h2>
-        </Link>
-        <Link
-          className="w-full md:w-1/2 flex justify-center md:justify-start md:pl-24 items-center relative"
-          href={ctaLinkPhotographer}
-        >
-          <h2 className="z-50 text-24">{photographer}</h2>
-        </Link>
-      </div>
-
-      <div className="h-screen w-auto md:w-full overflow-hidden z-0 brightness-50">
-        <img
-          src="/assets/welcome.jpg"
-          alt=""
-          className="h-screen md:h-auto md:w-full object-cover "
-        />
-      </div>
-    </div>
+    <Container paddingVertical="relative py-4 md:py-6 lg:py-8 h-screen flex justify-center items-center">
+      <Grid className="my-auto">
+        <div className="leading-none uppercase text-46 md:col-start-5 col-span-4 md:row-start-1 flex items-end">
+          <h1>{title}</h1>
+        </div>
+        <div className="col-span-4 h-max w-full relative">
+          <MockImage
+            image={photographerImage.props.image}
+            alt=""
+            className="brightness-50 object-cover z-0"
+          />
+          <Link
+            href={ctaLinkAssistant}
+            className="absolute inset-0 flex justify-center items-center z-50"
+          >
+            <h2 className="text-24 text-white">{assistant}</h2>
+          </Link>
+        </div>
+        <div className="col-span-4 md:col-start-5 md:row-start-2 h-max w-full relative">
+          <MockImage
+            image={assistantImage.props.image}
+            alt=""
+            className="brightness-50 object-cover z-0"
+          />
+          <Link
+            href={ctaLinkPhotographer}
+            className="absolute inset-0 flex justify-center items-center z-50"
+          >
+            <h2 className="text-24 text-white">{photographer}</h2>
+          </Link>
+        </div>
+      </Grid>
+    </Container>
   )
 }
 

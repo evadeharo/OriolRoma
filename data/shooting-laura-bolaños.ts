@@ -34,17 +34,22 @@ const data: PageType = {
       },
     },
     {
+      name: "Breadcrumb",
+      key: "Breadcrumb",
+      props: {},
+    },
+    {
       name: "PhotographyGrid",
       key: "PhotographyGrid",
       props: {
         title: "Shooting Laura Bolaños final fashion collection",
         text: `Fashion shooting for Laura Bolaños Arnal by Rita Salgado. Final fashion collection for her degree. Total of 6 looks, the idea behind the shooting was to get 4 full body images and some detail shots.\nThe shooting took place in Artspace Barcelona.`,
         text3: `**Photographer**
-        \n Rita Salgado
-        \n **Photo Assistant & Digital Tech**
-        \n Oriol Roma i Turull
-        \n **Designer**
-        \n Laura Bolaños Arnal`,
+        \nRita Salgado
+        \n**Photo Assistant & Digital Tech**
+        \nOriol Roma i Turull
+        \n**Designer**
+        \nLaura Bolaños Arnal`,
         photos: [
           {
             image: imageModule({
