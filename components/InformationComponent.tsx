@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ImageType, ModuleType } from "types"
 import Container from "./Container"
 import Grid from "./Grid"
@@ -11,6 +12,8 @@ type Props = {
   contact: string
   email: string
   pretext: string
+  ctaLinkLinkedin: string
+  ctaLinkInstagram: string
 }
 
 const InformationComponent = ({
@@ -20,12 +23,16 @@ const InformationComponent = ({
   contact,
   email,
   pretext,
+  ctaLinkLinkedin,
+  ctaLinkInstagram,
 }: Props): React.ReactElement => {
   return (
     <Container>
       <Grid>
         <div className="flex flex-col col-span-4 md:col-span-6 col-start-1">
-          <span className="font-medium mb-6 md:mb-2 text-24 leading-none">{pretext}</span>
+          <span className="font-medium mb-6 md:mb-2 text-24 leading-none">
+            {pretext}
+          </span>
           <div className="hidden md:block font-medium mb-8">
             <span className="pr-1">{contact}</span>
             <a
@@ -36,7 +43,23 @@ const InformationComponent = ({
             </a>
           </div>
           <HTMLText className="mb-3" text={text} />
-          <HTMLText className="mb-6" text={subtext} />
+          <HTMLText className="mb-3" text={subtext} />
+          <div className="flex w-max h-10 mb-3 md:mb-0 gap-3">
+            <Link href={ctaLinkInstagram} passHref>
+              <a target="_blank">
+                <div className="w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
+                  I
+                </div>
+              </a>
+            </Link>
+            <Link href={ctaLinkLinkedin} passHref>
+              <a target="_blank">
+                <div className="w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
+                  L
+                </div>
+              </a>
+            </Link>
+          </div>
         </div>
         <div className="col-span-4 md:col-start-9">
           <MockImage
