@@ -46,3 +46,52 @@ a {
   padding-top: 0;
   margin-top: 0;
 }
+
+.underlineHover {
+  display: inline-block;
+  position: relative;
+}
+
+.underlineHover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+.underlineHover:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.underlineAnimation {
+  display: inline-block;
+  position: relative;
+}
+
+.underlineAnimation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+  transform: scaleX(1);
+}
+
+.underlineAnimation:hover:after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}

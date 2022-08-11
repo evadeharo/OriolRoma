@@ -3,6 +3,7 @@ import MockImage from "./MockImage"
 import Link from "./Link"
 import Container from "./Container"
 import Grid from "./Grid"
+import Appear from "./Appear"
 
 type Props = {
   title: string
@@ -23,40 +24,51 @@ const Home = ({
   assistantImage,
   photographerImage,
 }: Props): React.ReactElement => {
-  console.log(photographerImage)
-
   return (
     <Container paddingVertical="relative py-4 md:py-6 lg:py-8 h-screen flex justify-center items-center">
       <Grid className="my-auto">
-        <div className="leading-none uppercase text-46 md:col-start-5 col-span-4 md:row-start-1 flex items-end">
-          <h1>{title}</h1>
-        </div>
         <div className="col-span-4 h-max w-full relative">
-          <MockImage
-            image={photographerImage.props.image}
-            alt=""
-            className="brightness-50 object-cover z-0"
-          />
-          <Link
-            href={ctaLinkAssistant}
-            className="absolute inset-0 flex justify-center items-center z-50"
-          >
-            <h2 className="text-24 text-white">{assistant}</h2>
-          </Link>
+          <Appear>
+            <MockImage
+              image={photographerImage.props.image}
+              alt=""
+              className="object-cover z-0"
+            />
+          </Appear>
         </div>
+        <Link href={ctaLinkPhotographer} className="col-span-4">
+          <Appear className="w-full h-full">
+            <div className="bg-black w-full h-full flex items-end">
+              <h2 className="text-24 text-white font-light p-4">{photographer}</h2>
+            </div>
+          </Appear>
+        </Link>
         <div className="col-span-4 md:col-start-5 md:row-start-2 h-max w-full relative">
-          <MockImage
-            image={assistantImage.props.image}
-            alt=""
-            className="brightness-50 object-cover z-0"
-          />
-          <Link
-            href={ctaLinkPhotographer}
-            className="absolute inset-0 flex justify-center items-center z-50"
-          >
-            <h2 className="text-24 text-white">{photographer}</h2>
-          </Link>
+          <Appear>
+            <MockImage
+              image={assistantImage.props.image}
+              alt=""
+              className="object-cover z-0"
+            />
+          </Appear>
         </div>
+        <div className="col-span-2 row-start-1 md:col-start-9 flex items-end leading-none">
+          <Appear>
+            <div className="font-medium uppercase text-40">
+              <h1>{title}</h1>
+            </div>
+          </Appear>
+        </div>
+        <Link
+          href={ctaLinkAssistant}
+          className="col-span-4 md:col-start-9 row-start-2"
+        >
+          <Appear className="w-full h-full">
+            <div className="bg-black w-full h-full flex items-end">
+              <h2 className="text-24 text-white font-light p-4">{assistant}</h2>
+            </div>
+          </Appear>
+        </Link>
       </Grid>
     </Container>
   )

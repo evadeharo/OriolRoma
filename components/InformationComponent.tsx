@@ -1,9 +1,12 @@
 import Link from "next/link"
 import { ImageType, ModuleType } from "types"
+import Appear from "./Appear"
 import Container from "./Container"
 import Grid from "./Grid"
 import HTMLText from "./HTMLText"
 import MockImage from "./MockImage"
+import instagram from "./svg/instagram"
+import linkedin from "./svg/linkedin"
 
 type Props = {
   text: string
@@ -30,10 +33,56 @@ const InformationComponent = ({
     <Container>
       <Grid>
         <div className="flex flex-col col-span-4 md:col-span-6 col-start-1">
-          <span className="font-medium mb-6 md:mb-2 text-24 leading-none">
-            {pretext}
-          </span>
-          <div className="hidden md:block font-medium mb-8">
+          <Appear>
+            <span className="font-medium mb-6 md:mb-2 text-24 leading-none">
+              {pretext}
+            </span>
+          </Appear>
+          <Appear>
+            <div className="hidden md:block font-medium mb-8">
+              <span className="pr-1">{contact}</span>
+              <a
+                href="mailto:o.romatufoto@gmail.com"
+                className="border-b border-black"
+              >
+                {email}
+              </a>
+            </div>
+          </Appear>
+          <Appear>
+            <HTMLText className="mb-3" text={text} />
+            <HTMLText className="mb-3" text={subtext} />
+          </Appear>
+          <Appear>
+            <div className="flex w-max h-10 mb-3 md:mb-0 gap-3 mt-4">
+              <Link href={ctaLinkInstagram} passHref>
+                <a target="_blank">
+                  <div className="transform hover:-translate-y-1 hover:bg-black hover:text-white hover:transition w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
+                    {instagram}
+                  </div>
+                </a>
+              </Link>
+              <Link href={ctaLinkLinkedin} passHref>
+                <a target="_blank">
+                  <div className="transform hover:-translate-y-1 hover:bg-black hover:text-white hover:transition w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
+                    {linkedin}
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </Appear>
+        </div>
+        <div className="col-span-4 md:col-start-9">
+          <Appear>
+            <MockImage
+              image={image.props.image}
+              className="object-cover"
+              alt=""
+            />
+          </Appear>
+        </div>
+        <div className="md:hidden font-medium mb-6 col-span-4">
+          <Appear>
             <span className="pr-1">{contact}</span>
             <a
               href="mailto:o.romatufoto@gmail.com"
@@ -41,41 +90,7 @@ const InformationComponent = ({
             >
               {email}
             </a>
-          </div>
-          <HTMLText className="mb-3" text={text} />
-          <HTMLText className="mb-3" text={subtext} />
-          <div className="flex w-max h-10 mb-3 md:mb-0 gap-3">
-            <Link href={ctaLinkInstagram} passHref>
-              <a target="_blank">
-                <div className="w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
-                  I
-                </div>
-              </a>
-            </Link>
-            <Link href={ctaLinkLinkedin} passHref>
-              <a target="_blank">
-                <div className="w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
-                  L
-                </div>
-              </a>
-            </Link>
-          </div>
-        </div>
-        <div className="col-span-4 md:col-start-9">
-          <MockImage
-            image={image.props.image}
-            className="object-cover"
-            alt=""
-          />
-        </div>
-        <div className="md:hidden font-medium mb-6 col-span-4">
-          <span className="pr-1">{contact}</span>
-          <a
-            href="mailto:o.romatufoto@gmail.com"
-            className="border-b border-black"
-          >
-            {email}
-          </a>
+          </Appear>
         </div>
       </Grid>
     </Container>

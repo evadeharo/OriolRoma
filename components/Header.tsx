@@ -53,7 +53,7 @@ const Header = ({
       <div className="hidden md:flex justify-end gap-x-6 w-1/2">
         {navigation.map((item, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="underlineHover">
               <Link href={item.ctaLink}>{item.ctaLabel}</Link>
             </div>
           )

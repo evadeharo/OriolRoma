@@ -1,3 +1,4 @@
+import Appear from "./Appear"
 import Link from "./Link"
 
 type NavigationTypes = {
@@ -24,7 +25,9 @@ const Menu: React.FC<Props> = ({
               className="text-20"
               onClick={() => closeMenuCallback()}
             >
-              <Link href={item.ctaLink}>{item.ctaLabel}</Link>
+              <Appear>
+                <Link href={item.ctaLink}>{item.ctaLabel}</Link>
+              </Appear>
             </button>
           )
         })}

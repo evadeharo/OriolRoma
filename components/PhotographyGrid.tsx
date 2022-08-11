@@ -1,4 +1,5 @@
 import { ImageType, ModuleType } from "types"
+import Appear from "./Appear"
 import Container from "./Container"
 import Grid from "./Grid"
 import HTMLText from "./HTMLText"
@@ -35,10 +36,12 @@ const PhotographyGrid = ({
   const BCN = ["workshop-bcn-design-week"].includes(pageName)
 
   return (
-    <Container>
+    <Container paddingTopPage="pt-12">
       <Grid>
         <div className="col-start-1 col-span-4 md:col-span-6 leading-tight font-medium mb-6 md:mb-12">
-          <h4 className="text-40">{title}</h4>
+          <Appear>
+            <h4 className="text-40">{title}</h4>
+          </Appear>
         </div>
 
         <div
@@ -46,25 +49,33 @@ const PhotographyGrid = ({
             } text-14 flex flex-col md:flex-row justify-between items-start mb-6`}
         >
           <div className={` ${BCN ? "md:w-[32.5%]" : "md:w-full"} w-full`}>
-            <HTMLText className="mb-3" text={text} />
-            {text2 && <HTMLText className="mt-6" text={text2} />}
+            <Appear>
+              <HTMLText className="mb-3" text={text} />
+              {text2 && <HTMLText className="mt-6" text={text2} />}
+            </Appear>
           </div>
           {textAdded && (
             <div className="w-full md:w-[32.5%] text-14 mt-6">
-              <HTMLText text={textAdded} />
+              <Appear>
+                <HTMLText text={textAdded} />
+              </Appear>
             </div>
           )}
         </div>
 
         {text3 && (
           <div className="md:col-start-6 col-span-2 col-start-1 md:col-span-4 text-14">
-            <HTMLText className="mb-3" text={text3} />
+            <Appear>
+              <HTMLText className="mb-3" text={text3} />
+            </Appear>
           </div>
         )}
 
         {outstanding && (
           <span className="col-span-4 md:col-span-6 md:col-start-6 text-gray-600 italic text-14">
-            {outstanding}
+            <Appear>
+              {outstanding}
+            </Appear>
           </span>
         )}
 
@@ -85,11 +96,13 @@ const PhotographyGrid = ({
                   : ""
                 }`}
             >
-              <MockImage
-                image={item.image.props.image}
-                alt=""
-                className="object-cover"
-              />
+              <Appear>
+                <MockImage
+                  image={item.image.props.image}
+                  alt=""
+                  className="object-cover"
+                />
+              </Appear>
             </div>
           )
         })}

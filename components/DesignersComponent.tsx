@@ -1,6 +1,7 @@
 import Grid from "./Grid"
 import HTMLText from "./HTMLText"
 import Container from "./Container"
+import Appear from "./Appear"
 
 type Props = {
   title: string
@@ -29,46 +30,64 @@ const DesignersComponent: React.FC<Props> = ({
     <Container paddingVertical="pt-0 pb-24 md:pb-12 xl:pb-24 bs:pb-32">
       <Grid>
         <div className="col-start-1 col-span-4 md:col-span-5 leading-tight font-medium mb-6 md:mb-12">
-          <h4 className="text-40">{title}</h4>
+          <Appear>
+            <h4 className="text-40">{title}</h4>
+          </Appear>
         </div>
 
         <div className="col-span-2 md:col-span-3 col-start-1 md:col-start-1 flex flex-col">
-          <h6 className="text-20 font-bold">{day1}</h6>
+          <Appear>
+            <h6 className="text-20 font-bold">{day1}</h6>
+          </Appear>
           {textRow1.map((item, index) => {
             return (
               <div key={index} className="text-14">
-                <HTMLText text={item} />
+                <Appear>
+                  <HTMLText text={item} />
+                </Appear>
               </div>
             )
           })}
         </div>
         <div className="col-span-2 col-start-3 md:col-span-3 md:col-start-4 flex flex-col">
-          <h6 className="text-20 font-bold">{day2}</h6>
+          <Appear>
+            <h6 className="text-20 font-bold">{day2}</h6>
+          </Appear>
           {textRow2.map((item, index) => {
             return (
               <div key={index} className="text-14">
-                <HTMLText text={item} />
+                <Appear>
+                  <HTMLText text={item} />
+                </Appear>
               </div>
             )
           })}
         </div>
         <div className="col-span-2 col-start-1 md:col-span-3 md:col-start-7 flex flex-col">
-          <h6 className="text-20 font-bold">{day3}</h6>
+          <Appear>
+            <h6 className="text-20 font-bold">{day3}</h6>
+          </Appear>
 
           {textRow3.map((item, index) => {
             return (
               <div key={index} className="text-14">
-                <HTMLText text={item} />
+                <Appear>
+                  <HTMLText text={item} />
+                </Appear>
               </div>
             )
           })}
         </div>
         <div className="col-span-2 col-start-3 md:col-span-3 md:col-start-10 flex flex-col">
-          <h6 className="text-20 font-bold">{day4}</h6>
+          <Appear>
+            <h6 className="text-20 font-bold">{day4}</h6>
+          </Appear>
           {textRow4.map((item, index) => {
             return (
               <div key={index} className="text-14">
-                <HTMLText text={item} />
+                <Appear>
+                  <HTMLText text={item} />
+                </Appear>
               </div>
             )
           })}

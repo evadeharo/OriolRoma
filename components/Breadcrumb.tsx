@@ -2,7 +2,6 @@ import Breadcrumbs from "nextjs-breadcrumbs"
 import Container from "./Container"
 
 const Breadcrumb = (): React.ReactElement => {
-
   return (
     <Container
       paddingVertical="pt-14"
@@ -12,7 +11,7 @@ const Breadcrumb = (): React.ReactElement => {
       <Breadcrumbs
         rootLabel="Home"
         listClassName="flex gap-x-2 font-light"
-        activeItemClassName="underline"
+        activeItemClassName="underlineAnimation"
         inactiveItemClassName="opacity-50"
       />
     </Container>
