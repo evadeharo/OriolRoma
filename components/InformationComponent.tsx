@@ -30,7 +30,7 @@ const InformationComponent = ({
   ctaLinkInstagram,
 }: Props): React.ReactElement => {
   return (
-    <Container>
+    <Container paddingVertical="pt-24 md:pt-12 xl:pt-24 bs:pt-32">
       <Grid>
         <div className="flex flex-col col-span-4 md:col-span-6 col-start-1">
           <Appear>

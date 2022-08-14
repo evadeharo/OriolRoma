@@ -12,7 +12,10 @@ type Props = {
   vertical?: boolean
 }
 
-const Slider: React.FC<Props> = ({ items, vertical = true }: Props): React.ReactElement => {
+const Slider: React.FC<Props> = ({
+  items,
+  vertical = true,
+}: Props): React.ReactElement => {
   const [width, setWidth] = useState<number>(0)
   const carousel = useRef<HTMLDivElement>()
   const [activeIndex, setActiveIndex] = useState<number>(0)
@@ -66,12 +69,13 @@ const Slider: React.FC<Props> = ({ items, vertical = true }: Props): React.React
             return (
               <div
                 key={index}
-                className={` ${vertical ? "w-[25vw]" : "w-[50vw]"} h-max ml-6`}
+                className={` ${vertical ? "w-[70vw] md:w-[25vw]" : "w-[75vw] md:w-[50vw]"
+                  } h-full ml-6`}
               >
                 <MockImage
                   image={item.image.props.image}
                   alt=""
-                  className="pointer-events-none"
+                  className="pointer-events-none object-cover"
                 />
               </div>
             )

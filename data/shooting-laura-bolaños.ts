@@ -34,11 +34,6 @@ const data: PageType = {
       },
     },
     {
-      name: "Breadcrumb",
-      key: "Breadcrumb",
-      props: {},
-    },
-    {
       name: "PhotographyGrid",
       key: "PhotographyGrid",
       props: {

@@ -78,15 +78,15 @@ const data = [
     },
   },
   {
-    route: ['digitalTech', 'workshop-bcn-design-week'],
+    route: ['digitalTech', 'bcn-design-week'],
     api: {
-      url: 'workshop-bcn-design-week',
+      url: 'bcn-design-week',
     },
   },
   {
-    route: ['digitalTech', 'shooting-final-fashion-LCI'],
+    route: ['digitalTech', 'final-fashion-LCI'],
     api: {
-      url: 'shooting-final-fashion-LCI',
+      url: 'final-fashion-LCI',
     },
   },
   {

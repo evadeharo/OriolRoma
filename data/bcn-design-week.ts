@@ -9,7 +9,7 @@ const data: PageType = {
     image: "",
   },
   language: "es",
-  pageName: "workshop-bcn-design-week",
+  pageName: "bcn-design-week",
   components: [
     {
       name: "Header",
@@ -32,11 +32,6 @@ const data: PageType = {
           },
         ],
       },
-    },
-    {
-      name: "Breadcrumb",
-      key: "Breadcrumb",
-      props: {},
     },
     {
       name: "PhotographyGrid",

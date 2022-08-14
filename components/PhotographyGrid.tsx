@@ -38,7 +38,7 @@ const PhotographyGrid = ({
   const landscape = ["landscape"].includes(pageName)
   const hernani = ["FCB-Hernani"].includes(pageName)
   const UES = ["FCB-UES"].includes(pageName)
-  const BCN = ["workshop-bcn-design-week"].includes(pageName)
+  const BCN = ["bcn-design-week"].includes(pageName)
 
   const [oppened, setOppened] = useState(false)
   const [blockedScroll, setBlockedScroll] = useState(false)

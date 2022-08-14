@@ -34,11 +34,6 @@ const data: PageType = {
       },
     },
     {
-      name: "Breadcrumb",
-      key: "Breadcrumb",
-      props: {},
-    },
-    {
       name: "DigitalSelector",
       key: "DigitalSelector",
       props: {
@@ -46,7 +41,7 @@ const data: PageType = {
         navigation: [
           {
             ctaLabel: "Workshop Barcelona Design Week",
-            ctaLink: "/digitalTech/workshop-bcn-design-week",
+            ctaLink: "/digitalTech/bcn-design-week",
             image: imageModule({
               src: "/assets/images/digitalTech/designWeek/bloque1.jpg",
               width: 1200,
@@ -64,7 +59,7 @@ const data: PageType = {
           },
           {
             ctaLabel: "Shooting final fashion collections LCI Barcelona 2020-2021",
-            ctaLink: "/digitalTech/shooting-final-fashion-LCI",
+            ctaLink: "/digitalTech/final-fashion-LCI",
             image: imageModule({
               src: "/assets/images/digitalTech/LCI/bloque3.jpg",
               width: 1200,

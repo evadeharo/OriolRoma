@@ -9,7 +9,7 @@ const data: PageType = {
     image: "",
   },
   language: "es",
-  pageName: "shooting-final-fashion-LCI",
+  pageName: "final-fashion-LCI",
   components: [
     {
       name: "Header",
@@ -32,11 +32,6 @@ const data: PageType = {
           },
         ],
       },
-    },
-    {
-      name: "Breadcrumb",
-      key: "Breadcrumb",
-      props: {},
     },
     {
       name: "PhotographyGridMixedSizes",
