@@ -45,6 +45,7 @@ const data: PageType = {
         title: "Landscape",
         text: "One of the main reasons why I love landscape photography is that I’ve been in contact with nature since I was a kid. I remember spending the weekends and also my summer vacations in a town in La Cerdanya.",
         text2: "I fell in love with the mountains and its landscapes. I like to consider my landscape photography as a way of showing that passion and love that I have.",
+        vertical: false,
         photos: [
           {
             image: imageModule({

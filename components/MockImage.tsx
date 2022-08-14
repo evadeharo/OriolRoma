@@ -14,16 +14,18 @@ const MockImage: FC<Props> = ({
   containerClassName,
 }) => {
   return (
-    <div className={containerClassName}>
-      <Image
-        src={image.name}
-        alt={alt}
-        className={className}
-        height={image.size.height}
-        width={image.size.width}
-        layout="responsive"
-      />
-    </div>
+    <>
+      <div className={containerClassName}>
+        <Image
+          src={image.name}
+          alt={alt}
+          className={` cursor-pointer ${className}`}
+          height={image.size.height}
+          width={image.size.width}
+          layout="responsive"
+        />
+      </div>
+    </>
   )
 }
 

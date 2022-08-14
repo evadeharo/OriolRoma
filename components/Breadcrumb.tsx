@@ -4,8 +4,8 @@ import Container from "./Container"
 const Breadcrumb = (): React.ReactElement => {
   return (
     <Container
-      paddingVertical="pt-14"
-      className="fixed inset-0 h-[12vh] z-50"
+      paddingVertical="pt-16"
+      className="fixed inset-0 h-[13vh] sbs:h-[11vh] z-50"
       backgroundColor="bg-white"
     >
       <Breadcrumbs

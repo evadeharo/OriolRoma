@@ -43,6 +43,7 @@ const data: PageType = {
       key: "PhotographyGrid",
       props: {
         title: "Falles d'Andorra la Vella - 2019",
+        vertical: false,
         photos: [
           {
             image: imageModule({

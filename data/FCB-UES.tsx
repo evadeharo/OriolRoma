@@ -44,6 +44,7 @@ const data: PageType = {
       props: {
         title: "2020-21 DHRugby FCB - UES",
         text: "The first game in the 2020 - 2021 Season in División de Honor de Rugby. FCB played against UE Santboiana in a derby match.",
+        vertical: false,
         photos: [
           {
             image: imageModule({

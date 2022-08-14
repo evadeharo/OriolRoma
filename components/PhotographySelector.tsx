@@ -4,6 +4,7 @@ import Grid from "./Grid"
 import MockImage from "./MockImage"
 import Link from "./Link"
 import Appear from "./Appear"
+import { motion } from "framer-motion"
 
 type PersonalOption = {
   text: string
@@ -45,16 +46,21 @@ const PhotographySelector = ({
                 }`}
             >
               <Link href={item.ctaLink} className="w-full relative">
-                <Appear>
-                  <p className="z-40 text-20 leading-tight w-[80%] absolute bottom-0 p-4 text-white">
-                    {item.text}
-                  </p>
-                  <MockImage
-                    image={item.image.props.image}
-                    alt=""
-                    className="brightness-50 object-cover"
-                  />
-                </Appear>
+                <motion.div
+                  whileHover={{ translateY: -10 }}
+                  whileTap={{ scaleY: 0.9 }}
+                >
+                  <Appear>
+                    <p className="z-40 text-20 leading-tight w-[80%] absolute bottom-0 p-4 text-white">
+                      {item.text}
+                    </p>
+                    <MockImage
+                      image={item.image.props.image}
+                      alt=""
+                      className="brightness-50 object-cover"
+                    />
+                  </Appear>
+                </motion.div>
               </Link>
             </div>
           )

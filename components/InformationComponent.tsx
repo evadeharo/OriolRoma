@@ -7,7 +7,7 @@ import HTMLText from "./HTMLText"
 import MockImage from "./MockImage"
 import instagram from "./svg/instagram"
 import linkedin from "./svg/linkedin"
-
+import { motion } from "framer-motion"
 type Props = {
   text: string
   subtext: string
@@ -43,7 +43,7 @@ const InformationComponent = ({
               <span className="pr-1">{contact}</span>
               <a
                 href="mailto:o.romatufoto@gmail.com"
-                className="border-b border-black"
+                className="underlineAnimation"
               >
                 {email}
               </a>
@@ -57,16 +57,24 @@ const InformationComponent = ({
             <div className="flex w-max h-10 mb-3 md:mb-0 gap-3 mt-4">
               <Link href={ctaLinkInstagram} passHref>
                 <a target="_blank">
-                  <div className="transform hover:-translate-y-1 hover:bg-black hover:text-white hover:transition w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
+                  <motion.div
+                    whileHover={{ translateY: -10 }}
+                    whileTap={{ scaleY: 0.9 }}
+                    className="hover:bg-black text-black border-black hover:text-white border w-10 h-10 flex justify-center items-center"
+                  >
                     {instagram}
-                  </div>
+                  </motion.div>
                 </a>
               </Link>
               <Link href={ctaLinkLinkedin} passHref>
                 <a target="_blank">
-                  <div className="transform hover:-translate-y-1 hover:bg-black hover:text-white hover:transition w-10 h-10 border border-black cursor-pointer flex justify-center items-center">
+                  <motion.div
+                    whileHover={{ translateY: -10 }}
+                    whileTap={{ scaleY: 0.9 }}
+                    className="hover:bg-black text-black border-black hover:text-white border w-10 h-10 flex justify-center items-center"
+                  >
                     {linkedin}
-                  </div>
+                  </motion.div>
                 </a>
               </Link>
             </div>
