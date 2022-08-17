@@ -1,9 +1,10 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+
+# misc
+.DS_Store
 
 # testing
 /coverage
@@ -26,10 +27,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env
+.env.*
 
 # vercel
 .vercel
@@ -37,11 +36,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-.env
-
-.tmp
-.env.*
-
-/public/assets/videos
-pages/*
-staticdata/*
+# generated files
+/pages
+/staticdata/*
