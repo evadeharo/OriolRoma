@@ -52,7 +52,7 @@ const Slider: React.FC<Props> = ({
     >
       <motion.div
         drag="x"
-        className="flex items-stretch h-max"
+        className="flex items-center h-max"
         dragConstraints={{ right: width, left: -width }}
         whileTap={{ cursor: "grabbing" }}
         onPanEnd={(e, { offset }) => {
