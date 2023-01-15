@@ -12,12 +12,14 @@ type Props = {
   logo: string
   navigation: Array<NavigationTypes>
   ctaLinkHome: string
+  pageName?: string
 }
 
 const Header = ({
   logo,
   navigation,
   ctaLinkHome,
+  pageName,
 }: Props): React.ReactElement => {
   const [showMenuOverlay, setShowMenuOverlay] = useState(false)
   const [blockedScroll, setBlockedScroll] = useState(false)
@@ -45,23 +47,27 @@ const Header = ({
   }, [blockedScroll])
 
   return (
-    <div className="h-[11vh] bg-white w-full fixed top-0 flex items-center md:px-8 z-[100] px-4">
+    <div className="h-[11vh] w-full fixed top-0 flex items-center md:px-8 z-[100] px-4">
       <div className="flex items-start justify-between w-full">
         <div className="flex flex-col">
-          <Link href={ctaLinkHome}>
-            <span className="text-24 font-bold">{logo}</span>
-          </Link>
-          <Breadcrumbs
-            rootLabel="Home"
-            listClassName="flex gap-x-2 font-light"
-            activeItemClassName="underlineAnimation"
-            inactiveItemClassName="opacity-50"
-          />
+          {pageName !== "home" && (
+            <>
+              <Link href={ctaLinkHome}>
+                <span className="text-24 font-bold">{logo}</span>
+              </Link>
+              <Breadcrumbs
+                rootLabel="Home"
+                listClassName="flex gap-x-2 font-light"
+                activeItemClassName="underlineAnimation"
+                inactiveItemClassName="opacity-50"
+              />
+            </>
+          )}
         </div>
         <div className="hidden md:flex justify-end gap-x-6 w-1/2">
           {navigation.map((item, index) => {
             return (
-              <div key={index} className="underlineHover">
+              <div key={index} className="underlineHover mix-blend-multiply	">
                 <Link href={item.ctaLink}>{item.ctaLabel}</Link>
               </div>
             )

@@ -12,6 +12,28 @@ const data: PageType = {
   pageName: "home",
   components: [
     {
+      name: "Header",
+      key: "Header",
+      props: {
+        logo: "Oriol Roma",
+        ctaLinkHome: "/",
+        navigation: [
+          {
+            ctaLabel: "Photo Assistant",
+            ctaLink: "/digitalTech",
+          },
+          {
+            ctaLabel: "Photography",
+            ctaLink: "/photographer",
+          },
+          {
+            ctaLabel: "Information",
+            ctaLink: "/about",
+          },
+        ],
+      },
+    },
+    {
       name: "Home",
       key: "Home",
       props: {
