@@ -12,6 +12,7 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.8",
     "dotenv": "^10.0.0",
     "framer-motion": "^4.1.17",
     "fs-extra": "^10.0.1",

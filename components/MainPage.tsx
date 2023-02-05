@@ -1,6 +1,7 @@
 import Head from "next/head"
 import ComponentIterator from "./ComponentIterator"
 import { PageContext, usePageContext } from "context/PageContext"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Page({
   meta,
@@ -29,6 +30,7 @@ export default function Page({
           {components && (
             <ComponentIterator pageName={pageName} modules={components} />
           )}
+          <Analytics />
         </div>
       </PageContext.Provider>
     </>
