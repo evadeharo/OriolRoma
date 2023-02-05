@@ -24,7 +24,7 @@ const PhotographySelector = ({
   options,
 }: Props): React.ReactElement => {
   return (
-    <Container paddingTopPage="pt-12">
+    <Container paddingTopPage="pt-6 md:pt-0 sbs:pt-12">
       <Grid>
         <div className="col-start-1 col-span-4 leading-tight mb-6 md:mb-12 row-start-1">
           <Appear>

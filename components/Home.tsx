@@ -30,11 +30,13 @@ const Home = ({
       <Grid className="my-auto">
         <div className="col-span-4 h-max w-full relative">
           <Appear>
-            <MockImage
-              image={photographerImage.props.image}
-              alt=""
-              className="object-cover z-0"
-            />
+            <Link href={ctaLinkPhotographer}>
+              <MockImage
+                image={photographerImage.props.image}
+                alt=""
+                className="object-cover z-0"
+              />
+            </Link>
           </Appear>
         </div>
         <Link href={ctaLinkPhotographer} className="col-span-4">
@@ -50,24 +52,25 @@ const Home = ({
         </Link>
         <div className="col-span-4 md:col-start-5 md:row-start-2 h-max w-full relative">
           <Appear>
-            <MockImage
-              image={assistantImage.props.image}
-              alt=""
-              className="object-cover z-0"
-            />
+            <Link href={ctaLinkAssistant}>
+              <MockImage
+                image={assistantImage.props.image}
+                alt=""
+                className="object-cover z-0"
+              />
+            </Link>
           </Appear>
         </div>
-        <div className="col-span-2 row-start-1 md:col-start-9 flex items-end leading-none">
+        <div className="hidden md:col-span-2 row-start-1 md:col-start-9 md:flex items-end leading-none">
           <Appear>
             <motion.div
               whileHover={{ translateY: -10 }}
               whileTap={{ scaleY: 0.9 }}
             >
-              <Link
-                className="font-medium uppercase text-40 text-left"
-                href="/about"
-              >
-                <h1>{title}</h1>
+              <Link href="/about">
+                <h1 className="font-medium uppercase md:text-40 text-left">
+                  {title}
+                </h1>
               </Link>
             </motion.div>
           </Appear>

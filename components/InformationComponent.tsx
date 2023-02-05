@@ -30,7 +30,7 @@ const InformationComponent = ({
   ctaLinkInstagram,
 }: Props): React.ReactElement => {
   return (
-    <Container paddingVertical="pt-24 md:pt-12 xl:pt-24 bs:pt-32">
+    <Container paddingTopPage="pt-6 md:pt-0 sbs:pt-12">
       <Grid>
         <div className="flex flex-col col-span-4 md:col-span-6 col-start-1">
           <Appear>
@@ -42,7 +42,7 @@ const InformationComponent = ({
             <div className="hidden md:block font-medium mb-8">
               <span className="pr-1">{contact}</span>
               <a
-                href="mailto:o.romatufoto@gmail.com"
+                href="mailto:oriol@oromatu.com"
                 className="underlineAnimation"
               >
                 {email}
@@ -93,7 +93,7 @@ const InformationComponent = ({
           <Appear>
             <span className="pr-1">{contact}</span>
             <a
-              href="mailto:o.romatufoto@gmail.com"
+              href="mailto:oriol@oromatu.com"
               className="border-b border-black"
             >
               {email}

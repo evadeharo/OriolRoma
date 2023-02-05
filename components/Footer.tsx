@@ -21,7 +21,7 @@ const Footer = ({
         <div>
           <span className="pr-1">{contact}</span>
           <a
-            href="mailto:o.romatufoto@gmail.com"
+            href="mailto:oriol@oromatu.com"
             className="border-b border-black"
           >
             {email}

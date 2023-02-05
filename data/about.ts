@@ -39,7 +39,7 @@ const data: PageType = {
       props: {
         pretext: "Photo Assistant | Digital Tech | Photographer",
         contact: "Find me",
-        email: "o.romatu@gmail.com",
+        email: "oriol@oromatu.com",
         text: `I am a photo assistant, digital tech and photographer based in Barcelona.\nI grew up between the Catalan Pyrinees and Barcelona.\nSports and mountains are my passions.
           
           \n **Schooling / Specific education:**

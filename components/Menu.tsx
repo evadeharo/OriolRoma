@@ -16,7 +16,7 @@ const Menu: React.FC<Props> = ({
   closeMenuCallback,
 }: Props): React.ReactElement => {
   return (
-    <div className="bg-gray-300 fixed top-[11vh] left-0 w-screen h-screen flex justify-center items-center">
+    <div className="bg-gray-300 fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
       <div className="flex flex-col leading-3xl">
         {navigation.map((item, index) => {
           return (
