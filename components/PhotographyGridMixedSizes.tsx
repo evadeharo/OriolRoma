@@ -51,7 +51,7 @@ const PhotographyGridMixedSizes = ({
   return (
     <>
       <Container
-        paddingTopPage="pt-6 md:pt-0 sbs:pt-12"
+        paddingTopPage="pt-6 md:pt-0 bs:pt-8 sbs:pt-12"
         paddingVertical="pb-0 pt-24 md:pt-12 xl:pt-24 bs:pt-32"
       >
         <Grid>

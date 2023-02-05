@@ -62,7 +62,7 @@ const PhotographyGrid = ({
 
   return (
     <>
-      <Container paddingTopPage="pt-6 md:pt-0 sbs:pt-12">
+      <Container paddingTopPage="pt-6 md:pt-0 bs:pt-8 sbs:pt-12">
         <Grid>
           <div className="col-start-1 col-span-4 md:col-span-6 leading-tight font-medium mb-6 md:mb-12">
             <Appear>

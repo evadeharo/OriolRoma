@@ -19,7 +19,7 @@ type Props = {
 
 const DigitalSelector = ({ title, navigation }: Props): React.ReactElement => {
   return (
-    <Container paddingTopPage="pt-6 md:pt-0 sbs:pt-12">
+    <Container paddingTopPage="pt-6 md:pt-0 bs:pt-8 sbs:pt-12">
       <Grid>
         <div className="col-start-1 md:col-span-5 col-span-4 row-start-1 leading-tight font-medium mb-12">
           <Appear>
